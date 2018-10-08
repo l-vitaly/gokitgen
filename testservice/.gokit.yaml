@@ -1,0 +1,9 @@
+service: helloservice.Service
+path: ./pkg/helloservice
+
+transports:
+  http:
+    endpoints:
+      Say: 
+        body: ["name"]
+        query: []
